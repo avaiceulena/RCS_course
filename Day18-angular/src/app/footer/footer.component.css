@@ -1,0 +1,36 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding-top: 15px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .line {
+    border: 1px solid #b4b4b4;
+    width: 100%;
+    margin: 0 20px 0 0;
+  }
+  
+  .footer-links {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    border-right: 1px solid #b4b4b4;
+    
+  }
+  
+  .contact-info {
+    font-size: 14px;
+  }
+  

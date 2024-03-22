@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Day3.css">
+        <title>Button Page</title>
+    </head>
+    <body>
+        
+        <!-- UZDEVUMS NR.2 -->
+        <div>
+            <button id="buttonClick" onclick="buttonClickCount()"> - Click ME - </button>
+            <p id="clickCount">Number of clicks: 0</p>
+        </div>
+
+        <script>
+            let clickCount = 0;
+
+            function buttonClickCount() {
+                clickCount++;
+                document.getElementById('clickCount').textContent = 'Number of clicks: ' + clickCount;
+            }
+        </script>
+
+
+        <br>
+
+        <!-- UZDEVUMS NR.1 -->
+        <div class="task1">
+            <input type="text" id="numberInput" placeholder="Enter a number">
+            <button onclick="checkNumber()">Check Number</button>
+        </div>
+
+        <script>
+            function checkNumber() {
+                const userInput = document.getElementById('numberInput').value;
+
+                if (!isNaN(userInput)) {
+                    const number = parseFloat(userInput);
+
+                    if (number % 2 !== 0) {
+                    document.getElementById('numberInput').style.backgroundColor = 'red';
+                    } else {
+                    document.getElementById('numberInput').style.backgroundColor = 'green';
+                    }
+                } else {
+                    document.getElementById('numberInput').style.backgroundColor = '';
+                    alert('Please enter a number!');
+                }
+            }
+        </script>
+
+        <br>
+        
+        <!-- Piemērs kursa ietvaros  -->
+        <div class="imput-from">
+            <input type="text" id="input1" class="testInput">
+            <button id="redButton" class="but1" onClick="calculateSum()">Click me</button>
+        </div>
+
+        <script>
+            function calculateSum() {
+                //document.getElementById("input1").value = "Hello!";
+                document.getElementById("but1"); //innerHTML = "clik on me!";
+
+                let userInput = document.getElementById("input1").value;
+                alert(userInput);
+
+            }
+        </script>
+    </body>
+</html>

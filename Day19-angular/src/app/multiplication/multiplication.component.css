@@ -1,0 +1,43 @@
+div {
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 20px;
+    
+  }
+  
+  h2 {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    
+  }
+  
+  button {
+    background-color: #8e8072;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d88782;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-top: 25px;
+    text-transform: uppercase;
+  }

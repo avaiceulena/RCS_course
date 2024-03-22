@@ -1,0 +1,73 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.container img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.container > div {
+    max-width: 600px;
+}
+
+.container h2 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.container p {
+    color: #555;
+}
+
+.employment {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.employment h2 {
+    color: #1e1e1e;
+    border-bottom: 2px solid #333;
+    
+}
+
+.employment h3 {
+    color: #212121;
+}
+
+.employment ul {
+    list-style-type: square;
+    padding: 0;
+    margin: 20px;
+}
+
+.employment li {
+    margin-bottom: 10px;
+}
+
+address {
+    color: #555;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}

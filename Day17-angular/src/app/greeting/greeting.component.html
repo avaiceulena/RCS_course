@@ -1,0 +1,8 @@
+<main>
+<div>
+    <label for="nameInput">Enter your name:</label>
+    <input id="nameInput" [(ngModel)]="userName" placeholder="Type your name" />
+    <button (click)="sayHello()">Say Hello</button>
+    <p>{{ greeting }}</p>
+  </div>
+</main>

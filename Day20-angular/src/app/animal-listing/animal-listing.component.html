@@ -1,0 +1,20 @@
+<div>
+    <label for="sequenceNumber">Number: </label>
+    <input type="text" id="sequenceNumber" [(ngModel)]="sequenceNumber" placeholder="Enter number">
+
+    <label for="newAnimalName">New Animal Name:</label>
+    <input type="text" id="newAnimalName" [(ngModel)]="newAnimalName" placeholder="Enter new animal name">
+
+    <button (click)="updateAnimalName()">Update Animal Name</button>
+    <br>
+    <div *ngIf="errorMessage" class="error-message">This is not a valid number!</div>
+</div>
+
+<div *ngFor="let animal of animals" class="animalBox">
+    <h2>{{ animal.name }}</h2>
+    <p>Age: {{ animal.age }}</p>
+    <p>Species: {{ animal.species }}</p>
+    <p>No. {{ animal.number }}</p>
+    <img [src]="animal.pictureLink" alt="{{ animal.name }} Image" width="200">
+</div>
+

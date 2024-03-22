@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <title>Min and Max</title>
+    </head>
+    <body>
+
+        <!-- UZDEVUMS NR.2 -->
+        <label for="numbersInputTwo">Enter numbers separated by commas:</label>
+        <input type="text" id="numbersInputTwo" placeholder="1, 2, 3, 4, 5">
+        <button onclick="findDuplicate()">Check out</button>
+
+        <div id="results"></div>
+
+        <script>
+            function findDuplicate() {
+                let userInput = document.getElementById("numbersInputTwo").value;
+                let numbersArray = userInput.split(",");
+
+                if (numbersArray.some(isNaN)) {
+                    document.getElementById("results").innerHTML = "Error! Please check if you separated numbers with commas.";
+                return;
+                }
+
+                let numberDuplicates = findNumberDuplicates(numbersArray);
+
+                if (numberDuplicates !== undefined) {
+                    document.getElementById('results').innerHTML = `Number entered twice in the array: ${numberDuplicates}`;
+                } else {
+                    document.getElementById('results').innerHTML = "No number entered twice in the array.";
+                }
+            }
+
+            function findNumberDuplicates(arr) {
+                for (let i = 0; i < arr.length - 1; i++) {
+                    if (arr[i] === arr[i + 1]) {
+                        return arr[i];
+                    }
+                }
+                return undefined;
+            }
+        </script>
+
+        <br>
+
+        <!-- UZDEVUMS NR.1 -->
+        <label for="numbersInput">Enter numbers separated by commas:</label>
+        <input type="text" id="numbersInput" placeholder="1, 2, 3, 4, 5">
+        <button onclick="getMinMax()">Check out</button>
+
+        <div id="minMaxResults"></div>
+
+        <script>
+            function getMinMax() {
+                let userInput = document.getElementById("numbersInput").value;
+                let numbersArray = userInput.split(",");
+
+                if (numbersArray.some(isNaN)) {
+                    document.getElementById("minMaxResults").innerHTML = "Error! Please check if you separated numbers with commas.";
+                    return;
+                }
+
+                let minNumber = Math.min.apply(null, numbersArray);
+                let maxNumber = Math.max.apply(null, numbersArray);
+
+                document.getElementById("minMaxResults").innerHTML = "Smallest number: " + minNumber + "<br>Biggest number: " + maxNumber;
+            }
+        </script>
+    </body>
+</html>

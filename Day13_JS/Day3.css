@@ -1,0 +1,12 @@
+#redButton {
+    border: 1px;
+    cursor: pointer;
+}
+
+#buttonTwo {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+    font-size: 16px;
+    border: 1px;
+}

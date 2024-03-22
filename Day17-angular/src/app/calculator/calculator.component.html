@@ -1,0 +1,18 @@
+<p>calculator works!</p>
+
+<div>
+    <label for="num1">Enter Number 1:</label><br>
+    <input type="text" id="num1" [(ngModel)]="number1" />
+  
+    <br>
+    <br>
+    <label for="num2">Enter Number 2:</label><br>
+    <input type="text" id="num2" [(ngModel)]="number2" />
+  
+    <br>
+    <br>
+    <button (click)="calculateSum()">Calculate Sum</button>
+  
+    <p>Sum: {{ sum }}</p>
+  </div>
+  
